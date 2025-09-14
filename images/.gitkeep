@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muñoz Remodeling</title>
+  <style>
+    :root { --bg:#ffffff; --fg:#000000; --muted:#f4f4f4; --line:#e5e5e5; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--fg); }
+    header { background:#000; color:#fff; text-align:center; padding:56px 20px; }
+    header h1 { margin:0 0 8px; font-size:44px; line-height:1.1; }
+    header p { margin:0; opacity:.9; font-size:18px; }
+    .wrapper { max-width:1040px; margin:0 auto; padding:32px 20px; }
+    h2 { margin:0 0 16px; font-size:28px; }
+    /* Services */
+    .services { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+    .card { border:2px solid var(--fg); padding:16px; border-radius:10px; background:var(--muted); text-align:center; }
+    /* Gallery */
+    .gallery { margin-top:24px; }
+    .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); }
+    .shot { border:1px solid var(--line); background:#fff; border-radius:10px; overflow:hidden; }
+    .shot img { width:100%; height:220px; object-fit:cover; display:block; }
+    .shot figcaption { padding:10px 12px; font-size:14px; border-top:1px solid var(--line); }
+    /* Contact */
+    .contact { text-align:center; }
+    .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:12px; }
+    .btn { border:2px solid var(--fg); padding:12px 16px; border-radius:10px; text-decoration:none; color:var(--fg); display:inline-block; }
+    .btn:hover { background:#000; color:#fff; }
+    footer { border-top:1px solid var(--line); text-align:center; padding:20px; font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muñoz Remodeling</h1>
+    <p>General Remodeling Services with Quality &amp; Trust</p>
+    <div style="font-size:40px;margin-top:10px;">👷‍♂️</div>
+  </header>
+
+  <main class="wrapper">
+    <!-- Services -->
+    <section aria-labelledby="services-title">
+      <h2 id="services-title">Our Services</h2>
+      <div class="services">
+        <div class="card">🎨 Painting</div>
+        <div class="card">🧱 Ceramic &amp; Tile</div>
+        <div class="card">🚰 Plumbing</div>
+        <div class="card">🪵 Flooring</div>
+        <div class="card">🔧 Small Repairs</div>
+        <div class="card">🏠 And more…</div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Our Work</h2>
+      <p>Before &amp; afters and recent projects.</p>
+      <div class="grid">
+        <!-- Cambia las rutas a tus fotos en /images/ -->
+        <figure class="shot">
+          <img src="images/work1.jpg" alt="Interior painting project" loading="lazy">
+          <figcaption>Interior painting</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/work2.jpg" alt="Tile installation project" loading="lazy">
+          <figcaption>Tile installation</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/work3.jpg" alt="Plumbing repair" loading="lazy">
+          <figcaption>Plumbing repair</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/work4.jpg" alt="Flooring install" loading="lazy">
+          <figcaption>Flooring install</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/work5.jpg" alt="Bathroom remodel" loading="lazy">
+          <figcaption>Bathroom remodel</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="images/work6.jpg" alt="Kitchen backsplash" loading="lazy">
+          <figcaption>Kitchen backsplash</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" aria-labelledby="contact-title" style="margin-top:28px;">
+      <h2 id="contact-title">Contact</h2>
+      <p>Call or write us to get a free estimate.</p>
+      <div class="btns">
+        <a class="btn" href="tel:18432522755">📞 Call 843-252-2755</a>
+        <a class="btn" href="mailto:raul.m.z.11234@gmail.com">✉️ Email</a>
+        <a class="btn" href="https://raul19902.github.io/Munoz-Remodeling/" target="_blank" rel="noopener">🌐 Website</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Muñoz Remodeling — All Rights Reserved</footer>
+</body>
+</html>
