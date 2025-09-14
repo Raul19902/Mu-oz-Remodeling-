@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muñoz Remodelación</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
+      text-align: center;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .logo {
+      margin: 20px auto;
+    }
+    .worker {
+      font-size: 100px;
+      animation: move 1.5s infinite alternate;
+    }
+    @keyframes move {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muñoz Remodelación</h1>
+    <p>Calidad y confianza en cada proyecto</p>
+  </header>
+
+  <div class="logo">
+    <!-- Aquí puedes poner tu imagen de logo si la subes -->
+    <h2>🛠️ Logo Muñoz</h2>
+  </div>
+
+  <div class="worker">👷‍♂️</div>
+
+  <section>
+    <h2>Servicios</h2>
+    <p>✅ Remodelaciones de casas y oficinas<br>
+       ✅ Pintura interior y exterior<br>
+       ✅ Plomería y electricidad<br>
+       ✅ Construcción en general
+    </p>
+  </section>
+
+  <footer>
+    <p>📞 Contáctanos: (123) 456-7890 | ✉️ contacto@munozremodelacion.com</p>
+    <p>&copy; 2025 Muñoz Remodelación</p>
+  </footer>
+</body>
+</html>
