@@ -1,94 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muñoz Remodeling</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #000;
-      text-align: center;
-    }
-    header {
-      background: #000;
-      color: #fff;
-      padding: 30px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.2em;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .service-box {
-      border: 2px solid #000;
-      border-radius: 8px;
-      padding: 20px;
-      background: #f9f9f9;
-      font-size: 1.1em;
-    }
-    footer {
-      background: #000;
-      color: #fff;
-      padding: 15px;
-      margin-top: 20px;
-      font-size: 0.9em;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; text-align: center; }
+    header { background: black; color: white; padding: 20px 0; }
+    h1 { margin: 0; }
+    .services, .contact, .gallery { padding: 30px; }
+    .services ul { list-style: none; padding: 0; }
+    .services li { margin: 8px 0; }
+    .worker { font-size: 80px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .gallery-grid img { width: 100%; border-radius: 10px; border: 2px solid #ccc; }
+    footer { background: #222; color: #ccc; padding: 15px; font-size: 14px; }
+    a { color: #007acc; text-decoration: none; }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Muñoz Remodeling</h1>
-    <p>General Remodeling Services with Quality & Trust</p>
-    <p>👷‍♂️</p>
+    <p>General Remodeling Services</p>
   </header>
 
-  <section id="services">
+  <section class="services">
+    <div class="worker">👷‍♂️</div>
     <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-box">🎨 Painting</div>
-      <div class="service-box">🧱 Ceramic & Tile</div>
-      <div class="service-box">🚰 Plumbing</div>
-      <div class="service-box">🪵 Flooring</div>
-      <div class="service-box">🔨 And more...</div>
+    <ul>
+      <li>Painting</li>
+      <li>Ceramic</li>
+      <li>Plumbing</li>
+      <li>Flooring</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <div>
+        <img src="images/painting.jpg" alt="Painting project">
+        <p>Interior/Exterior Painting</p>
+      </div>
+      <div>
+        <img src="images/floors.jpg" alt="Flooring project">
+        <p>Flooring Installation</p>
+      </div>
+      <div>
+        <img src="images/bathroom.jpg" alt="Bathroom remodel">
+        <p>Bathroom Remodel</p>
+      </div>
     </div>
   </section>
 
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <p>"Our clients recommend us for reliability and quality results."</p>
-  </section>
-
-  <section id="contact">
+  <section class="contact">
     <h2>Contact Us</h2>
-    <p>📞 843-252-2755</p>
-    <p>📧 raul.m.z.11234@gmail.com</p>
+    <p>📞 Phone: <a href="tel:8432522755">843-252-2755</a></p>
+    <p>📧 Email: <a href="mailto:raul.m.z.11234@gmail.com">raul.m.z.11234@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Muñoz Remodeling – All Rights Reserved</p>
+    <p>&copy; 2025 Muñoz Remodeling. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
